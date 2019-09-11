@@ -1,23 +1,30 @@
+import { Form, Input } from '@rocketseat/unform';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '~/assets/logo.svg';
 
-// import { Container } from './styles';
-
 export default function SignUp() {
+  function handleSubmit(data) {
+    console.log(data);
+  }
+
   return (
     <>
       <img src={logo} alt="GoBarber" />
 
-      <form>
-        <input type="text" placeholder="Nome completo" />
-        <input type="email" placeholder="Seu e-mail" />
-        <input type="password" placeholder="Seu senha secreta" />
+      <Form onSubmit={handleSubmit}>
+        <Input name="name" type="text" placeholder="Nome completo" />
+        <Input name="email" type="email" placeholder="Seu e-mail" />
+        <Input
+          name="password"
+          type="password"
+          placeholder="Seu senha secreta"
+        />
 
         <button type="submit">Criar conta</button>
         <Link to="/">Já tenho login</Link>
-      </form>
+      </Form>
     </>
   );
 }
