@@ -1,6 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GoBarber Web
+
+## Overview
+
+Site para prestadores de serviços visualizarem sua agenda.
+
+Utiliza o [GoBarber API](https://github.com/douglasdeoliveira/gobarber-api)
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
